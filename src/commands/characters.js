@@ -5,7 +5,8 @@ const axios = require('axios');
 const URL = 'https://api.tibiadata.com/v2/characters/';
 
 async function getCharacter(name) {
-        const url = `${URL}${name}.json`;
+        const args = name.join('+');
+        const url = `${URL}${args}.json`;
         const response = await axios.get(url);
         const result = response.data;
         return await result;

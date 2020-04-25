@@ -15,8 +15,12 @@ client.once('ready', () => {
 client.on('message', async message => {
     const args = message.content.slice(prefix.length).split(/ +/);
     const command = args.shift().toLowerCase();
+    const channelComandoBot = message.channel.id === '424637099606540288';
 
-    if (!message.content.startsWith(prefix)) return;
+    if (!message.content.startsWith(prefix) || !channelComandoBot) return;
+
+    if (command === 'comandos')
+        message.channel.send(commands.commandsBot.commandsBot());
 
     if (command === 'rashid')
         message.channel.send(commands.rashidInfo.rashidInfo());
@@ -24,10 +28,9 @@ client.on('message', async message => {
     if (command === 'share')
         message.channel.send(commands.sharedExp.sharedExp(args));
 
-    if (command === 'char') {
-        const character = args.join('+')
-        message.channel.send(await commands.embedCharacter.embedCharacter(character));
-    }
+    if (command === 'char')
+        message.channel.send(await commands.embedCharacter.embedCharacter(args));
+
     if (command === 'imbue')
         message.channel.send(commands.imbuements.imbuements())
 });
