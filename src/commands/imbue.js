@@ -2,7 +2,7 @@
 
 function imbuements() {
     return {
-        files: ['./src/images/imbuements.png']
+        files: ['./src/images/imbuement.png']
     }
 }
 

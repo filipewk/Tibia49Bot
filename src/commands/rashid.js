@@ -36,4 +36,5 @@ function rashidInfo() {
             break;
     }
 }
+
 exports.rashidInfo = rashidInfo;
