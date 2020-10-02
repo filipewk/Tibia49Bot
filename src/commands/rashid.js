@@ -1,5 +1,3 @@
-'use strict'
-
 function rashidInfo() {
     const { convertToTimeZone } = require('date-fns-timezone/dist/convertToTimeZone')
     const date = new Date();

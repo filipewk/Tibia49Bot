@@ -1,5 +1,3 @@
-'use strict'
-
 function imbuements() {
     return {
         files: ['./src/images/imbuement.png']

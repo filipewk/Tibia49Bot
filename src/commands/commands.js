@@ -1,5 +1,3 @@
-'use strict'
-
 function commandsBot() {
     return `
 **!char** <Retorna character no tibia>  ex: <!char On Rails>
