@@ -1,5 +1,3 @@
-'use strict'
-
 const Discord = require('discord.js');
 const axios = require('axios');
 const URL = 'https://api.tibiadata.com/v2/characters/';

@@ -1,5 +1,3 @@
-'use strict'
-
 function sharedExp(args) {
     const numberArgs = parseFloat(args);
     const lowLevelForm = Math.round((numberArgs * 0.666));
