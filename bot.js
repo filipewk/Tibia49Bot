@@ -6,7 +6,7 @@ const commands = require('./src/index');
 
 client.once('ready', () => {
     client.user.setActivity('!comandos', { type: 'WATCHING' });
-    console.log('Logado');
+    console.log('Rodando');
 });
 
 
