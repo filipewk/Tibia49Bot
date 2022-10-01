@@ -9,7 +9,6 @@ client.once('ready', () => {
     console.log('Rodando');
 });
 
-
 client.on('message', async message => {
     const args = message.content.slice(prefix.length).split(/ +/);
     const command = args.shift().toLowerCase();
