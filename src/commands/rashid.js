@@ -3,7 +3,7 @@ function rashidInfo() {
     const date = new Date();
     const dateCest = convertToTimeZone(date, { timeZone: 'Europe/Berlin' });
     const hoursNow = dateCest.getHours();
-    var dateNow = dateCest.getDay();
+    let dateNow = dateCest.getDay();
 
     if (hoursNow < 10)
         dateNow = (dateNow - 1);
